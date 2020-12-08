@@ -2,7 +2,7 @@ name: GitHub Actions GO
 on:
   push:
     branches:
-      - maser
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
