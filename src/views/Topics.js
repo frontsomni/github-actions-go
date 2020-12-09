@@ -3,13 +3,15 @@ import {
   Route,
   Link,
   useRouteMatch,
-  useParams
+  useParams,
+  useLocation
 } from 'react-router-dom';
 
 export default function Topics() {
   let match = useRouteMatch()
   // ignore no-unused-vars
   console.log(match)
+  console.log(useLocation())
   return (
     <div>
       <ul>
@@ -34,5 +36,6 @@ export default function Topics() {
 
 function Topic() {
   let {topicId} = useParams()
+  console.log(useParams())
   return <h3>topic ID: {topicId}</h3>
 }
