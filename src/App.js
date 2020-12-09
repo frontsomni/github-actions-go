@@ -1,5 +1,5 @@
 import {
-  BrowserRouter,
+  HashRouter,
   Switch,
   Route,
   Link,
@@ -12,7 +12,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter basename="/github-actions-go">
+    <HashRouter basename="/github-actions-go">
       <nav>
         <ul>
           <li>
@@ -43,7 +43,7 @@ function App() {
           <Topics></Topics>
         </Route>
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
